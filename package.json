@@ -1,0 +1,17 @@
+{
+    "name": "com.eviltwo.toy-shader-graph",
+    "displayName": "ToyShaderGraph",
+    "version": "1.0.0",
+    "unity": "6000.0",
+    "description": "This is a shader that renders solid-colored shadows on an Unlit surface, giving it a flat appearance.",
+    "author": {
+        "name": "DAIKI(eviltwo)",
+        "url": "https://github.com/eviltwo"
+    },
+
+    "keywords": [
+    ],
+
+    "dependencies": {
+    }
+}
