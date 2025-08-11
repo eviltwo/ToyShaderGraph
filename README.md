@@ -1,4 +1,4 @@
-# ToyShader
+# Toy Shader Graph
 This is a shader that renders solid-colored shadows on an Unlit surface, giving it a flat appearance. It works with Unity 6 URP.
 
 <img width="960" height="534" alt="image" src="https://github.com/user-attachments/assets/539e69f9-0693-405c-8637-f8ee652940b4" />
