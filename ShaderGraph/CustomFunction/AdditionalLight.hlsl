@@ -39,7 +39,8 @@ void GetAdditionalLightColor_float(float3 positionWS, float2 screenPosition, flo
     LIGHT_LOOP_BEGIN(pixelLightCount)
     {
         Light light = GetAdditionalLight(lightIndex, positionWS);
-        light.shadowAttenuation = AdditionalLightRealtimeShadow(lightIndex, positionWS, light.direction);
+        float shadowFade = GetAdditionalLightShadowFade(positionWS);
+        light.shadowAttenuation = lerp(AdditionalLightRealtimeShadow(lightIndex, positionWS, light.direction), 1, shadowFade);
         color += CalculateLighting(light, normalWS);
     }
     LIGHT_LOOP_END
