@@ -8,9 +8,9 @@
 void GetMainLightColor_float(out float3 color)
 {
     #ifdef SHADERGRAPH_PREVIEW
-        color = float3(1, 1, 1);
+    color = float3(1, 1, 1);
     #else
-        color = _MainLightColor;
+    color = _MainLightColor;
     #endif
 }
 
